@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<!-- =========================================================================== -->
+<!-- ///////////////////////////////////HEAD//////////////////////////////////// -->
+<!-- =========================================================================== -->
+	<head>
+	
+<!-- === META TAGS ============================================================= -->
+	
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title> Choo Choo Scheduler </title>
+		
+<!-- === BOOTSTRAP ============================================================= -->
+	
+		<link 
+		rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+		crossorigin="anonymous">
+		
+<!-- === CSS =================================================================== -->
+
+		<link rel = "stylesheet" type = "text/css" href = "assets/css/styles.css" />
+		
+<!-- === GOOGLE FONTS ========================================================== -->
+
+		<link href="https://fonts.googleapis.com/css?family=Rokkitt:300,400,800|Montserrat:900|Raleway|Teko:600" rel="stylesheet">
+		
+	</head>
+<!-- =========================================================================== -->
+<!-- ///////////////////////////////////BODY//////////////////////////////////// -->
+<!-- =========================================================================== -->
+	<body>
+		<container>	
+
+<!-- === HEADER ================================================================ -->
+		<div class="row heading" >
+			<div class="col-md-1 empty"> </div>	<!-- empty -->
+			<div class="col-md-10" id=head> 
+				<h1 id=choo> Choo Choo </h1>
+					<br>
+				<h1 id=scheduler> SCHEDULER </h1>
+			</div>	<!-- empty -->
+			<div class="col-md-1 empty"> </div>	<!-- empty -->
+		</div>
+					
+<!-- === CURRENT TRAIN SCHEDULE ================================================ -->
+		<div class=row>
+			<div class="col-md-1 empty"> </div>	<!-- empty -->
+			
+			<div class="col-lg-6" id=schedule> 
+				<div class="panel panel-default">
+		  <!-- Default panel contents -->
+		  		<div class="panel-heading">
+						<div class=row>
+							<div class=col-sm-10>
+								<h3 class="panel-title scheduleHeader"> CURRENT SCHEDULE </h3>
+							</div>
+
+		  				<div class=col-sm-2>
+		  					<button class="btn btn-default" type="submit" id="hide" > ADD 
+							 		<span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+								</button>
+								
+								<button class="btn btn-default" type="submit" id="show" > ADD 
+									<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+								</button>
+		  				</div>
+							
+						</div>
+		  		</div>
+		  		<!-- Table -->
+		  		<table class="table" id=trainTable>
+	    		  <tr>
+					    <th> TRAIN </th>
+					    <th> DESTINATION </th>
+					    <th class=center> FREQUENCY (min) </th>
+					    <th class=center> NEXT ARRIVAL </th>
+					    <th class=center> MINUTES AWAY </th>
+					  </tr>
+					  <tr>
+					    <td> Super Chief </td>
+					    <td> Los Angeles, California </td>
+					    <td class=center> 2160 </td>
+					    <td class=center> 06:00 </td>
+					    <td class=center> 1540 </td>
+					  </tr>
+					  <tr>
+					    <td> Orient Express </td>
+					    <td> Paris, France </td>
+					    <td class=center> 1440 </td>
+					    <td class=center> 06:00 </td>
+					    <td class=center> 720 </td>
+					  </tr>
+					  <tr>
+					    <td> The Flying Scotsman </td>
+					    <td> Edinburgh, Scotland </td>
+					    <td class=center> 510 </td>
+					    <td class=center> 06:00 </td>
+					    <td class=center> 255 </td>
+					  </tr>
+					  <tr>
+					    <td> Peruvian Central Railway </td>
+					    <td> Lima, Peru </td>
+					    <td class=center> 400 </td>
+					    <td class=center> 06:00 </td>
+					    <td class=center> 200 </td>
+					  </tr>
+					  <tr>
+					    <td> Bullet Train </td>
+					    <td> Tokyo, Japan </td>
+					    <td class=center> 231 </td>
+					    <td class=center> 06:00 </td>
+					    <td class=center> 165 </td>
+					  </tr>
+					  <tbody>
+					  	
+					  </tbody>
+
+		  		</table>
+				</div>
+			</div>
+			
+			<div class="col-md-1 empty"> </div>	<!-- empty -->
+			
+<!-- === ADD TRAIN ============================================================= -->	
+			<div class="col-md-3" id=add>
+				<div class="panel panel-default">
+		  		
+		  		<div class="panel-heading">
+		    		<h3 class="panel-title"> ADD TRAIN </h3>
+		  		</div>
+		  		
+		  		<div class="panel-body">
+		    		
+		    		<form>
+						  <div class="form-group">
+						    <label for="inputName"> TRAIN NAME </label>
+						    <input type="text" class="form-control" id="addName" placeholder="Super Choo Choo">
+						  </div>
+						  
+						  <div class="form-group">
+						    <label for="inputDestination"> DESTINATION </label>
+						    <input type="text" class="form-control" id="addDestination" placeholder="City, State/Country">
+						  </div>
+						  
+						  <div class="form-group">
+						    <label for="inputTime"> FIRST TRAIN TIME </label>
+						    <input type="time" class="form-control" id="addTime" placeholder="HH : mm : AM/PM">
+						  </div>
+						  
+						  <div class="form-group">
+						    <label for="inputFrequency"> FREQUENCY </label>
+						    <input type="number" class="form-control" id="addFrequency" placeholder="minutes">
+						  </div>
+						  
+						  
+						  
+						</form>
+						<button type="submit" class="btn btn-default" id="addTrain" > ADD TRAIN </button>
+		  		</div>
+		  		
+				</div>
+			</div>
+			
+			<div class="col-md-1 empty"> </div>	<!-- empty -->
+			
+	</div> <!-- row-->
+	
+	</container>
+		
+		<script 
+			src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js">	
+		</script>
+		
+		<script 
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+		</script>
+		
+		<script 
+			type="text/javascript" 
+			src="assets/javascript/app.js">
+		</script>
+	
+	</body>
+</html>
+<!-- =========================================================================== -->
+<!-- /////////////////////////////////////////////////////////////////////////// -->
+<!-- =========================================================================== -->

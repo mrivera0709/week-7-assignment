@@ -1,0 +1,120 @@
+body
+	{
+	font-family: 'Raleway', sans-serif;
+	color:#33200C;
+	background: linear-gradient(to bottom right, #5B5455, #7A7172);
+	background-attachment: fixed;
+	}
+	
+#add, #schedule, .empty
+	{
+	margin:0;
+	padding:0;
+	}
+
+#head
+	{
+	padding:20px 0;
+	padding-left:15px;
+	margin-bottom:30px;
+	}
+
+h1
+	{
+	display:inline;
+	font-size:5em;
+	color:#E4D8C7;
+	font-family: 'Rokkitt', serif;
+	line-height:100%;
+	
+	}
+
+#choo
+	{
+	text-shadow: 0 0px 30px rgba(20, 20, 20, 1);
+	color:#E4D8C7;
+	z-index:0;
+	font-style:italic;
+	}	
+
+#scheduler
+	{
+	font-weight:lighter;
+	line-height:0%;
+	font-size:4em;
+	position:relative;
+	top:-5px;
+	z-index:-1;
+	text-shadow: 0 0px 10px rgba(20, 20, 20, 1);
+	}
+	
+#show, #hide
+	{
+	width:100%;
+	height:53px;
+	float:left;
+
+
+	}
+
+.scheduleHeader
+	{
+	width:50%;
+	}
+	
+h3
+	{
+	font-family: 'Rokkitt', serif;
+	font-weight:bolder;
+	font-size:1.5em !important;
+	color:#322F25 !important;
+	padding:15px 0;
+
+	vertical-align:middle !important;
+	
+	}
+
+th
+	{
+	display:table-cell;
+	font-family: 'Montserrat', sans-serif;
+	vertical-align:middle !important;
+	padding:15px !important;
+	}
+	
+td
+	{
+	display:table-cell;
+	vertical-align:middle !important;
+	margin:20px;
+	padding:20px !important;
+	}
+	
+.table tr
+	{
+	height:50px;
+	vertical-align:middle;
+	
+	}
+	
+.center
+	{
+	text-align:center;
+	}
+
+.panel-heading
+	{
+	background-color: #E4D8C7 !important;
+	border-radius:3px;
+	
+	
+	}
+	
+.panel
+	{
+	height:100%;
+	padding:40px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+	border-radius:3px;
+	border:1px solid DarkGray;
+	}
