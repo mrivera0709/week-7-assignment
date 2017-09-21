@@ -1,9 +1,11 @@
 body
 	{
 	font-family: 'Raleway', sans-serif;
-	color:#33200C;
-	background: linear-gradient(to bottom right, #5B5455, #7A7172);
+	color:#302E2F;
+	background-image:url(../../wp-1.jpg);
 	background-attachment: fixed;
+	background-size:cover;
+	background-position: right bottom;
 	}
 	
 #add, #schedule, .empty
@@ -11,41 +13,45 @@ body
 	margin:0;
 	padding:0;
 	}
-
+	
 #head
 	{
 	padding:20px 0;
-	padding-left:15px;
-	margin-bottom:30px;
+	padding-left:20px;
+	margin-bottom:20px;
 	}
 
 h1
 	{
 	display:inline;
-	font-size:5em;
-	color:#E4D8C7;
-	font-family: 'Rokkitt', serif;
+	font-size:3em;
+	color:white;
+	font-family: 'Crimson Text', serif;
 	line-height:100%;
-	
 	}
 
-#choo
+#R
 	{
-	text-shadow: 0 0px 30px rgba(20, 20, 20, 1);
-	color:#E4D8C7;
-	z-index:0;
-	font-style:italic;
+	font-size:7em;
+	letter-spacing:-17px;
 	}	
 
-#scheduler
+#ail
 	{
-	font-weight:lighter;
-	line-height:0%;
-	font-size:4em;
-	position:relative;
-	top:-5px;
-	z-index:-1;
-	text-shadow: 0 0px 10px rgba(20, 20, 20, 1);
+	position: relative;
+	top:-35px;
+	}
+	
+#t
+	{
+	position: relative;
+	left:-150px;
+	}
+	
+#acker
+	{
+	position: relative;
+	left:-95px;
 	}
 	
 #show, #hide
@@ -53,8 +59,10 @@ h1
 	width:100%;
 	height:53px;
 	float:left;
-
-
+	font-family: 'Montserrat', sans-serif;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
+	border-radius:3px;
+	border:1px solid DarkGray;
 	}
 
 .scheduleHeader
@@ -64,14 +72,12 @@ h1
 	
 h3
 	{
-	font-family: 'Rokkitt', serif;
+	font-family: 'Crimson Text', serif;
 	font-weight:bolder;
 	font-size:1.5em !important;
-	color:#322F25 !important;
+	color:white !important;
 	padding:15px 0;
-
 	vertical-align:middle !important;
-	
 	}
 
 th
@@ -94,7 +100,6 @@ td
 	{
 	height:50px;
 	vertical-align:middle;
-	
 	}
 	
 .center
@@ -104,10 +109,8 @@ td
 
 .panel-heading
 	{
-	background-color: #E4D8C7 !important;
+	background: linear-gradient(to right, #1c1c1c, #41271c) !important;
 	border-radius:3px;
-	
-	
 	}
 	
 .panel
@@ -116,5 +119,6 @@ td
 	padding:40px;
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
 	border-radius:3px;
+	background-color:rgba(240, 240, 240, 0.85);
 	border:1px solid DarkGray;
 	}

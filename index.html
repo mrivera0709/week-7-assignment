@@ -25,7 +25,11 @@
 		
 <!-- === GOOGLE FONTS ========================================================== -->
 
-		<link href="https://fonts.googleapis.com/css?family=Rokkitt:300,400,800|Montserrat:900|Raleway|Teko:600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Rokkitt:300,400,800|Montserrat:900|Raleway|Teko:600" rel="stylesheet">
+		
+<!-- === Moment.js Reference =================================================== -->
+    <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 		
 	</head>
 <!-- =========================================================================== -->
@@ -38,9 +42,10 @@
 		<div class="row heading" >
 			<div class="col-md-1 empty"> </div>	<!-- empty -->
 			<div class="col-md-10" id=head> 
-				<h1 id=choo> Choo Choo </h1>
-					<br>
-				<h1 id=scheduler> SCHEDULER </h1>
+				<h1 id=R> R </h1>
+				<h1 id=ail> AIL </h1>
+				<h1 id=t> T </h1>
+				<h1 id=acker> ACKER </h1>
 			</div>	<!-- empty -->
 			<div class="col-md-1 empty"> </div>	<!-- empty -->
 		</div>
@@ -54,6 +59,7 @@
 		  <!-- Default panel contents -->
 		  		<div class="panel-heading">
 						<div class=row>
+							
 							<div class=col-sm-10>
 								<h3 class="panel-title scheduleHeader"> CURRENT SCHEDULE </h3>
 							</div>
@@ -72,50 +78,19 @@
 		  		</div>
 		  		<!-- Table -->
 		  		<table class="table" id=trainTable>
-	    		  <tr>
-					    <th> TRAIN </th>
-					    <th> DESTINATION </th>
-					    <th class=center> FREQUENCY (min) </th>
-					    <th class=center> NEXT ARRIVAL </th>
-					    <th class=center> MINUTES AWAY </th>
-					  </tr>
-					  <tr>
-					    <td> Super Chief </td>
-					    <td> Los Angeles, California </td>
-					    <td class=center> 2160 </td>
-					    <td class=center> 06:00 </td>
-					    <td class=center> 1540 </td>
-					  </tr>
-					  <tr>
-					    <td> Orient Express </td>
-					    <td> Paris, France </td>
-					    <td class=center> 1440 </td>
-					    <td class=center> 06:00 </td>
-					    <td class=center> 720 </td>
-					  </tr>
-					  <tr>
-					    <td> The Flying Scotsman </td>
-					    <td> Edinburgh, Scotland </td>
-					    <td class=center> 510 </td>
-					    <td class=center> 06:00 </td>
-					    <td class=center> 255 </td>
-					  </tr>
-					  <tr>
-					    <td> Peruvian Central Railway </td>
-					    <td> Lima, Peru </td>
-					    <td class=center> 400 </td>
-					    <td class=center> 06:00 </td>
-					    <td class=center> 200 </td>
-					  </tr>
-					  <tr>
-					    <td> Bullet Train </td>
-					    <td> Tokyo, Japan </td>
-					    <td class=center> 231 </td>
-					    <td class=center> 06:00 </td>
-					    <td class=center> 165 </td>
-					  </tr>
+	    		  
+	    		  <thead>
+		    		  <tr>
+						    <th> TRAIN </th>
+						    <th> DESTINATION </th>
+						    <th class=center> FREQUENCY (min) </th>
+						    <th class=center> NEXT ARRIVAL </th>
+						    <th class=center> MINUTES AWAY </th>
+						  </tr>
+					  </thead>
+					  
 					  <tbody>
-					  	
+					  	<!-- Firebase data goes here -->
 					  </tbody>
 
 		  		</table>
@@ -147,15 +122,13 @@
 						  
 						  <div class="form-group">
 						    <label for="inputTime"> FIRST TRAIN TIME </label>
-						    <input type="time" class="form-control" id="addTime" placeholder="HH : mm : AM/PM">
+						    <input type="text" class="form-control" id="addTime" placeholder="HH : mm (military time">
 						  </div>
 						  
 						  <div class="form-group">
 						    <label for="inputFrequency"> FREQUENCY </label>
 						    <input type="number" class="form-control" id="addFrequency" placeholder="minutes">
 						  </div>
-						  
-						  
 						  
 						</form>
 						<button type="submit" class="btn btn-default" id="addTrain" > ADD TRAIN </button>
@@ -168,19 +141,16 @@
 			
 	</div> <!-- row-->
 	
+	
 	</container>
 		
-		<script 
-			src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js">	
+		<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js">	
 		</script>
 		
-		<script 
-			src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
-		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+		</script>		
 		
-		<script 
-			type="text/javascript" 
-			src="assets/javascript/app.js">
+		<script type="text/javascript" src="assets/javascript/app.js">
 		</script>
 	
 	</body>
